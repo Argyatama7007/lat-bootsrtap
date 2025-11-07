@@ -1,1 +1,72 @@
-
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1600&q=70') center center / cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-btn {
+    transition: all 0.3s ease;
+  }
+  .hero-btn:hover {
+    transform: scale(1.05);
+    background-color: #ffc107;
+  }
+  
+  /* Cards */
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+  
+  /* Layanan Section */
+  .layanan-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Paket Section */
+  .paket-card {
+    border-top: 5px solid #007bff;
+  }
+  
+  /* Kontak Section */
+  .kontak-section {
+    background: linear-gradient(135deg, #001f3f, #003366);
+  }
+  
+  /* Floating WA */
+  .wa-float {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    transition: transform 0.3s ease;
+  }
+  .wa-float:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      height: 70vh;
+    }
+    .layanan-card img {
+      height: 180px;
+    }
+  }
